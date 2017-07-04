@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import appewtc.masterung.rmutsvcode.MyAlert;
 import appewtc.masterung.rmutsvcode.R;
 
 /**
@@ -75,6 +76,8 @@ public class NewRegisterFragment extends Fragment{
                 if (strName.length() == 0 || strUser.length() == 0 || strPassword.length() == 0) {
                     //Have Space
                     Log.d("4JulyV1", "Have Space");
+                    MyAlert myAlert = new MyAlert(getActivity());
+                    myAlert.myDialog("Have Space", "Please Fill All Every Blank");
 
                 } else {
                     //No Space
